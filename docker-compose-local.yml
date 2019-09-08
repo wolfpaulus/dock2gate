@@ -1,0 +1,8 @@
+version: '3'
+services:
+  prime:
+    container_name: prime
+    restart: unless-stopped
+    image: tomcatprime:latest
+    ports:
+      - "80:80"
