@@ -1,0 +1,13 @@
+version: '3'
+services:
+  prime-cluster:
+    restart: unless-stopped
+    image: "178522735890.dkr.ecr.us-west-2.amazonaws.com/prime_ws:latest"
+    ports:
+      - "80:80"
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: prime
+        awslogs-region: us-west-2
+        awslogs-stream-prefix: prime

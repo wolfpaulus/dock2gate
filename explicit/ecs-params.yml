@@ -1,6 +1,6 @@
 version: 1
 task_definition:
-  task_execution_role: fargateTaskExecutionRoleV1
+  task_execution_role: fargateTaskExecutionRoleV2
   ecs_network_mode: awsvpc
   task_size:
     mem_limit: 0.5GB
@@ -9,8 +9,8 @@ run_params:
   network_configuration:
     awsvpc_configuration:
       subnets:
-        - "subnet-0a0b35c477d45762d"
-        - "subnet-03a23e0873c126e41"
+        - "subnet-07c..."
+        - "subnet-029..."
       security_groups:
-        - "sg-03a1e0e1990588967"
-      assign_public_ip: ENABLED
+        - "sg-015..."
+      assign_public_ip: DISABLED
